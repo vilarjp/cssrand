@@ -1,0 +1,70 @@
+body {
+  background-color: #fcd04b;
+  font-family: Lato;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 300;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  background-color: #fcad26;
+  font-size: 16px;
+  font-weight: 300px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 25px 80px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 6px #efa424;
+}
+
+.btn:hover { /* hover = when mouse passes by it*/
+  box-shadow: 0 4px #efa424;
+  top: 2px;
+}
+
+.btn:active { /* active = when a user clicks on it, it's just a current action*/
+  box-shadow: none;
+  top: 6px;
+}
+
+.focused {
+  display: block;
+  position: relative;
+  margin: 30px auto;
+}
+
+.focused:focus { /* focus = when it's selected, like reached by a tab key or when a input is selected */
+  background-color: pink;
+}
+
+p {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  color: white;
+  border: 2px solid black;
+}
+
+.p1:hover {
+  transform: translate(5px, 5px); /* translate = changes it's position */
+}
+
+.p2:hover {
+  transform: scale(2, 2); /* scale = changes it's size */
+  transform-origin: left top; /* transform-origin = sets the origin position */
+}
+
+.p3:hover {
+  transform: rotate(45deg) scale(1.5, 1.5); /* rotate = rotate N degrees */
+  transform-origin: left bottom;
+}
